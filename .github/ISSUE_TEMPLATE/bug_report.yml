@@ -1,0 +1,40 @@
+name: Bug report
+description: Something in LocalDesk didn't work as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Please don't include API keys, tokens, or private repository contents.
+        Security issues go through private vulnerability reporting, not here.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Ask Baymax to …
+        3. See …
+    validations:
+      required: false
+  - type: input
+    id: localdesk-version
+    attributes:
+      label: LocalDesk version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version and chip
+      placeholder: "macOS 15.4, Apple M2"
+    validations:
+      required: true
